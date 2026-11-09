@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<meta name="theme-color" content="#1d4fb8">
+<meta name="screen-orientation" content="landscape">
+<title>Crown &amp; Steel: Knight Wars</title>
+<link rel="icon" href="favicon.svg">
+<script src="https://sdk.crazygames.com/crazygames-sdk-v3.js"></script>
+  <script type="module" crossorigin src="./assets/index-Cx6c7zUj.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-DEQbcv4b.css">
+</head>
+<body>
+<div id="game"></div>
+<div id="hud">
+  <div id="tl">
+    <div class="bar" id="hpbar"><div id="hpfill"></div><span>❤</span></div>
+    <div class="bar small" id="stbar"><div id="stfill"></div></div>
+    <div id="weap"></div>
+  </div>
+  <div id="tc"><div id="goal"></div><div id="flags"></div><div id="bossbar"><span></span><div><i></i></div></div><div id="objbar"><span></span><div><i></i></div></div></div>
+  <div id="tr"><span id="gold">🪙 0</span><span id="kills">⚔ 0</span><button id="pauseBtn" aria-label="Pause">❚❚</button></div>
+  <div id="banner"></div>
+  <div id="hint"></div>
+</div>
+<div id="touch">
+  <div id="joy"><div id="knob"></div></div>
+  <button class="btn" id="bAtk"><b>⚔</b><small>ATTACK</small><i id="heavyRing"></i></button>
+  <button class="btn" id="bBlock"><b>🛡</b><small>BLOCK</small></button>
+  <button class="btn" id="bDodge"><b>💨</b><small>DODGE</small></button>
+  <button class="btn" id="bSwap"><b id="swapIco">🗡</b><small>SWAP</small></button>
+  <button class="btn" id="bRage"><b>📯</b><small>RALLY</small><i id="rageFill"></i></button>
+</div>
+<div id="floats"></div>
+<div id="hurt"></div>
+<div id="toast"></div>
+
+<div class="screen" id="menu">
+  <div class="panel title">
+    <h1>Crown <span>&amp;</span> Steel<em>KNIGHT WARS</em></h1>
+    <div class="row"><span id="menuGold" class="pill">🪙 0</span><span id="menuStars" class="pill">⭐ 0</span></div>
+    <button id="btnPlay" class="big">▶ Battle!</button>
+    <div class="grid">
+      <button id="btnLevels">🗺 Campaign</button>
+      <button id="btnShop">⚒ Armory</button>
+      <button id="btnDaily">🎁 Daily <span class="badge"></span></button>
+      <button id="btnQuests">📜 Quests <span class="badge"></span></button>
+    </div>
+    <div id="menuTease"></div>
+    <div id="pcKeys">🖱 PC: <b>WASD</b> move · <b>Mouse</b> look · <b>Left click</b> attack (hold = heavy) · <b>Right click</b> block · <b>Space</b> dodge · <b>Q</b> swap weapon · <b>R</b> rally · <b>Shift</b> sprint · <b>Esc</b> pause</div>
+    <div class="row small"><button id="btnSound">🔊 Sound on</button><button id="btnFull">⛶ Fullscreen</button></div>
+  </div>
+</div>
+<div class="screen" id="levels"><div class="panel wide"><div class="head"><h2>🗺 Campaign</h2><span id="starTotal" class="pill">⭐ 0</span></div><div id="levelList"></div><button class="back">◀ Back</button></div></div>
+<div class="screen" id="daily"><div class="panel wide"><h2>🎁 Daily Reward</h2><div id="calendar"></div><p id="dailyMsg"></p><div class="row"><button id="btnClaim" class="big">Claim</button><button class="back">Continue ▶</button></div></div></div>
+<div class="screen" id="quests"><div class="panel wide"><h2>📜 Daily Quests</h2><div id="qList"></div><p id="qTimer" class="small"></p><button class="back">◀ Back</button></div></div>
+<div class="screen" id="shop"><div class="panel wide shop">
+  <div class="head"><h2>⚒ Armory</h2><span id="shopGold" class="pill">🪙 0</span></div>
+  <div class="tabs"><button class="tab" data-t="weapons">Weapons</button><button class="tab" data-t="gear">Armor &amp; Shield</button><button class="tab" data-t="army">Army</button><button class="tab" data-t="skins">Colors</button></div>
+  <div id="shopList"></div>
+  <button class="back">◀ Back</button></div></div>
+<div class="screen" id="win"><div class="panel"><h2 id="winTitle">Victory!</h2><div id="winStars"></div><p id="winInfo"></p><div class="row"><button id="btnNext" class="big">Next battle ▶</button><button id="btnDouble" class="reward" style="display:none">📺 x2 Gold</button><button id="btnWinShop">⚒ Armory</button><button id="btnWinMenu">Menu</button></div></div></div>
+<div class="screen" id="lose"><div class="panel"><h2 id="loseTitle">Defeated!</h2><p id="loseInfo"></p><div class="row"><button id="btnRevive" class="reward" style="display:none">📺 Revive</button><button id="btnRetry" class="big">↻ Try again</button><button id="btnLoseShop">⚒ Armory</button><button id="btnLoseMenu">Menu</button></div></div></div>
+<div class="screen" id="pause"><div class="panel"><h2>Paused</h2><div class="row"><button id="btnResume" class="big">▶ Resume</button><button id="btnRestart">↻ Restart</button><button id="btnQuit">Menu</button></div></div></div>
+<div id="adblock"><div>⏳</div></div>
+<div id="rotate"><div>📱↻<br>Rotate your phone to landscape</div></div>
+<div id="loading"><h1>Crown <span>&amp;</span> Steel<em>KNIGHT WARS</em></h1><div class="lb"><div id="loadbar"></div></div></div>
+</body>
+</html>
