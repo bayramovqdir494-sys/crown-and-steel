@@ -8,8 +8,8 @@
 <title>Crown &amp; Steel: Knight Wars</title>
 <link rel="icon" href="favicon.svg">
 <script src="https://sdk.crazygames.com/crazygames-sdk-v3.js"></script>
-  <script type="module" crossorigin src="./assets/index-DR2D36KP.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-Bq7ichNa.css">
+  <script type="module" crossorigin src="./assets/index-DZe-BHiP.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-Djergzo_.css">
 </head>
 <body>
 <div id="game"></div>
@@ -31,6 +31,7 @@
   <button class="btn" id="bBlock"><b>🛡</b><small>BLOCK</small></button>
   <button class="btn" id="bDodge"><b>💨</b><small>DODGE</small></button>
   <button class="btn" id="bSwap"><b id="swapIco">🗡</b><small>SWAP</small></button>
+  <button class="btn" id="bCharge"><b>🐎</b><small>CHARGE</small><i id="chargeFill"></i></button>
   <button class="btn" id="bRage"><b>📯</b><small>RALLY</small><i id="rageFill"></i></button>
 </div>
 <div id="floats"></div>
@@ -42,6 +43,7 @@
     <h1>Crown <span>&amp;</span> Steel<em>KNIGHT WARS</em></h1>
     <div class="row"><span id="menuGold" class="pill">🪙 0</span><span id="menuStars" class="pill">⭐ 0</span></div>
     <button id="btnPlay" class="big">▶ Battle!</button>
+    <button id="btnArena" class="arena">🏟 Endless Arena <small id="arenaBest"></small></button>
     <div class="grid">
       <button id="btnLevels">🗺 Campaign</button>
       <button id="btnShop">⚒ Armory</button>
@@ -49,7 +51,7 @@
       <button id="btnQuests">📜 Quests <span class="badge"></span></button>
     </div>
     <div id="menuTease"></div>
-    <div id="pcKeys">🖱 PC: <b>WASD</b> move · <b>Mouse</b> look · <b>Left click</b> attack (hold = heavy) · <b>Right click</b> block · <b>Space</b> dodge · <b>Q</b> swap weapon · <b>R</b> rally · <b>Shift</b> sprint · <b>Esc</b> pause</div>
+    <div id="pcKeys">🖱 PC: <b>WASD</b> move · <b>Mouse</b> look · <b>Left click</b> attack (hold = heavy) · <b>Right click</b> block · <b>Space</b> dodge · <b>Q</b> swap weapon · <b>R</b> rally · <b>E</b> horse charge · <b>Shift</b> sprint · <b>Esc</b> pause</div>
     <div class="row small"><button id="btnSound">🔊 Sound on</button><button id="btnFull">⛶ Fullscreen</button></div>
   </div>
 </div>
